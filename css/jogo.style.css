@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgb(159, 194, 228);
+    text-align: center;
+
+}
+
+.input-container {
+    
+        max-width: 300px; 
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgb(95, 165, 230);
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-color: black;
+    
+    
+}
+
+#p_mensagem {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.result-image {
+    
+        width: 350px; 
+        height: 230px; 
+        display: none; 
+        position: absolute; 
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+
+
+#input_numero {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.mensagem {
+    color: black; 
+}
