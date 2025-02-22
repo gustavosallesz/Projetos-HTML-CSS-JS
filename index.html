@@ -4,13 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Projetos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #00ffcc;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 15px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #00ffcc;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #00cc99;
+        }
+    </style>
 </head>
 <body>
-    <h1>Meus Projetos Web</h1>
-    <ul>
-        <li><a href="Sobre_Mim/">Currículo</a></li>
-        <li><a href="Calculadora_Web/">Calculadora com JavaScript</a></li>
-        <li><a href="projeto3/">Projeto 3</a></li>
-    </ul>
+    <div class="box">
+        <h1>Meus Projetos Web</h1>
+        <ul>
+            <li><a href="Sobre_Mim/">Currículo</a></li>
+            <li><a href="Calculadora_Web/">Calculadora com JavaScript</a></li>
+        </ul>
+    </div>
 </body>
 </html>
