@@ -3,68 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Projetos</title>
+    <title>Portfólio</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: overlay;
-            background-color: rgba(0, 0, 0, 0.5);
             font-family: Arial, sans-serif;
-            color: white;
-        }
-
-        .box {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-            border: 2px solid #00ffcc;
+            background-color: #f4f4f4;
+            color: #333;
             text-align: center;
-            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
         }
 
-        h1 {
-            margin-bottom: 20px;
-            font-size: 2.5em;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 15px 0;
-        }
-
-        ul li a {
-            text-decoration: none;
+        header {
+            background-color: #007BFF;
             color: white;
-            font-size: 1.2em;
-            transition: color 0.3s ease;
+            padding: 20px;
+            font-size: 1.8em;
         }
 
-        ul li a:hover {
-            color: #00cc99;
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .quote {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #007BFF;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #007BFF;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>Meus Projetos Web</h1>
-        <hr>
-        <ul>
-            <li><a href="Sobre_Mim/">Currículo</a></li>
-            <li><a href="Comunicacao_Inclusiva/">Interface de comunicação inclusiva</a></li>
-            <li><a href="Calculadora/">Calculadora com JavaScript</a></li>
-        </ul>
+    <header>
+        Luiz Gustavo - Analista Computacional
+    </header>
+
+    <div class="container">
+        <p class="quote">“A tecnologia é poderosa, mas é o talento dos profissionais de informática que a torna acessível.”</p>
+        
+        <h2>Projetos</h2>
+        <div class="projects">
+            <div class="project-card"><a href="Sobre_Mim/">Currículo</a></div>
+            <div class="project-card"><a href="Calculadora/">Calculadora com JavaScript</a></div>
+            <div class="project-card"><a href="Comunicacao_Inclusiva/">Interface de Comunicação Inclusiva</a></div>
+        </div>
     </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/luiz-gustavo-salles-6437401b8/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/gustavosallesz" target="_blank">GitHub</a>
+            <a href="mailto:lgjsalles@sga.pucminas.br">Email</a>
+        </div>
+    </footer>
 </body>
 </html>
