@@ -1,116 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio - Luiz Gustavo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        header {
-            background-color: #007BFF;
-            color: white;
-            padding: 20px;
-            font-size: 1.8em;
-        }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-        .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
 
-        .quote {
-            font-style: italic;
-            margin-bottom: 20px;
-            color: #555;
-        }
+    .container {
+      flex: 1;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem 1rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
 
-        .projects {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+    .quote {
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #555;
+    }
 
-        .project-card {
-            background: #007BFF;
-            color: white;
-            padding: 15px;
-            border-radius: 8px;
-            width: 30%;
-            text-align: center;
-            transition: transform 0.3s;
-        }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.6rem;
+      color: #222;
+    }
 
-        .project-card:hover {
-            transform: scale(1.05);
-        }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
 
-        .project-card a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .project-card a {
+      display: block;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      padding: 1.2rem;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
 
-        footer {
-            margin-top: 30px;
-            background: #222;
-            color: white;
-            padding: 20px;
-        }
+    .project-card a:hover {
+      background-color: #0056b3;
+      transform: scale(1.03);
+    }
 
-        .social-icons a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.5em;
-            transition: color 0.3s;
-        }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
 
-        .social-icons a:hover {
-            color: #007BFF;
-        }
-    </style>
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #007bff;
+    }
+
+    @media (max-width: 500px) {
+      header {
+        font-size: 1.4rem;
+      }
+
+      .project-card a {
+        padding: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .social-icons {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        Luiz Gustavo - Analista Computacional
-    </header>
+  <header>
+    Luiz Gustavo - Analista Computacional
+  </header>
 
-    <div class="container">
-        <p class="quote">“A tecnologia é poderosa, mas é o talento dos profissionais de informática que a torna acessível.”</p>
-        
-        <h2>Projetos</h2>
-        <div class="projects">
-            <div class="project-card">
-                <a href="Sobre_Mim/" target="_blank" rel="noopener noreferrer">Currículo</a>
-            </div>
-            <div class="project-card">
-                <a href="Calculadora/" target="_blank" rel="noopener noreferrer">Calculadora com JavaScript</a>
-            </div>
-            <div class="project-card">
-                <a href="Comunicacao_Inclusiva/" target="_blank" rel="noopener noreferrer">Interface de Comunicação Inclusiva</a>
-            </div>
-        </div>
+  <div class="container">
+    <p class="quote">“A tecnologia é poderosa, mas é o talento dos profissionais de informática que a torna acessível.”</p>
+    <h2>Projetos</h2>
+    <div class="projects">
+      <div class="project-card">
+        <a href="Sobre_Mim/" target="_blank" rel="noopener noreferrer">Currículo</a>
+      </div>
+      <div class="project-card">
+        <a href="Calculadora/" target="_blank" rel="noopener noreferrer">Calculadora com JavaScript</a>
+      </div>
+      <div class="project-card">
+        <a href="Comunicacao_Inclusiva/" target="_blank" rel="noopener noreferrer">Interface de Comunicação Inclusiva</a>
+      </div>
     </div>
+  </div>
 
-    <footer>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/luiz-gustavo-salles-6437401b8/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/gustavosallesz" target="_blank">GitHub</a>
-            <a href="mailto:lgjsalles@sga.pucminas.br">Email</a>
-        </div>
-    </footer>
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/luiz-gustavo-salles-6437401b8/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/gustavosallesz" target="_blank">GitHub</a>
+      <a href="mailto:lgjsalles@sga.pucminas.br">Email</a>
+    </div>
+  </footer>
 </body>
 </html>
