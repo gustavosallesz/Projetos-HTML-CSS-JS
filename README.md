@@ -1,2 +1,2 @@
 # Projetos-HTML-CSS-JS
-Repositório para armazenar os projetos realizados nos seminários de HTML, CSS e JavaScript, e futuramente com React.
+Repositório para armazenar os projetos desenvolvidos na graduação, em HTML, CSS e JavaScript
